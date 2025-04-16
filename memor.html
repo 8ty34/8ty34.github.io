@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+ <meta charset="UTF-8">
+ <title>Happy Birthday</title>
+ <link rel="stylesheet" href="css/me.css" type="text/css" />
+</head>
+  
+<body>
+<div class="bgcolor">
+  <div style="z-index:100;" id="dowebok">
+      <!--第一屏-->
+      <div class="section">
+          <div class="ly-box01">
+            <div class="ly-txt01">
+              <p class="ly-stxt01">致唐虹</p>
+              <p class="ly-stxt02">天可补，海可填，南山可移</p>
+              <p class="ly-stxt03">岁月既往，不可复追</p>
+              <p class="ly-stxt04">转瞬间，便到你22岁生日之际，祝愿你：</p>
+              <p class="ly-stxt05">朱颜长似，头上花枝，岁岁年年</p>
+            </div>
+            <div class="ly-txt02">
+              <p class="ly-stxt06">一路走来，七年光阴，风风雨雨，未有弃离</p>
+              <p class="ly-stxt07">只可愿，携手同行，共赴明朝</p>
+              <p class="ly-stxt08">最后送一首诗词：上邪！我欲与君相知</p>
+              <p class="ly-stxt09">长命无绝衰，山无棱，江水为绝，冬雷震震</p>
+              <p class="ly-stxt10">夏雨雪，天地合，乃敢与君绝。</p>
+            </div>
+        </div>
+      </div>
+
+   
+  <!--试验-->
+  <ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+<!-- 在bg-bubbles列表之后添加按钮 -->
+<button id="centerButton" onclick="window.location.href='fire.html'">一场烟花 🎇</button>
+
+
+  </div>
+
+
+
+<!-- 修改后的JavaScript -->
+<script>
+  setTimeout(function() {
+      const btn = document.getElementById('centerButton');
+      btn.classList.add('show');
+      
+      // 添加二次动画效果
+      setTimeout(() => {
+          btn.style.transition = 'all 0.6s ease-out';
+          btn.style.transform = `translateX(-50%) translateY(50%) scale(1.05)`;
+      }, 16000);
+  }, 20500); // 15秒延时
+</script>
